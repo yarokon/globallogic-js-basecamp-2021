@@ -1,4 +1,4 @@
-[Demo](hhttps://yarokon.github.io/globallogic-js-basecamp-2021/react/00-example/build)
+[Demo](https://yarokon.github.io/globallogic-js-basecamp-2021/react/00-example/build)
 
 ## How to create and set up a react project?
 
