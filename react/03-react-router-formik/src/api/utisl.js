@@ -3,6 +3,8 @@ export const wait = (ms = 800) =>
     setTimeout(resolve, ms);
   });
 
+export const createGetId = initialId => () => ++initialId;
+
 export const getTimestamp = () => Date.now();
 
 export const throwError = id => {

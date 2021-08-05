@@ -41,7 +41,7 @@ function UserForm({ users, setUsers }) {
           await userApi.editUser(payload);
           break;
         default:
-          throw Error(`Failed to execute this request for ${mode} mode`);
+          console.error(`Failed to execute this request for ${mode} mode`);
       }
     } catch (err) {
       window.alert(err.message);

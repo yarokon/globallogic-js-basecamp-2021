@@ -1,17 +1,14 @@
-import { wait, getTimestamp, throwError } from '../utisl';
+import { wait, createGetId, getTimestamp, throwError } from '../utisl';
 import data from './db';
 
-const getId = (
-  (id = data.length) =>
-  () =>
-    ++id
-)();
+const getId = createGetId(data.length);
 
 const api = {
   // GET /users
   async getUsers() {
     await wait(1000);
 
+    console.log('GET /users', data);
     return data;
   },
   // GET /users/:id
@@ -21,6 +18,7 @@ const api = {
     const user = data.find(u => u.id === id);
 
     if (user) {
+      console.log(`GET /users/${user.id}`, user);
       return user;
     } else {
       throwError(id);
@@ -38,6 +36,7 @@ const api = {
 
     data.push(newUser);
 
+    console.log('POST /users', newUser);
     return newUser;
   },
   // PUT /users
@@ -51,11 +50,12 @@ const api = {
         ...user,
         timestamp: getTimestamp(),
       };
+
+      console.log('PUT /users', data[index]);
+      return data[index];
     } else {
       throwError(user.id);
     }
-
-    return data[index];
   },
   // DELETE /users
   async deleteUser(user) {
@@ -64,6 +64,7 @@ const api = {
     const index = data.findIndex(u => u === user.id);
 
     if (~index) {
+      console.log('DELETE /users', user);
       return data.splice(index, 1);
     } else {
       throwError(user.id);
@@ -72,8 +73,10 @@ const api = {
   // GET /roles
   async getRoles() {
     await wait();
+    const ROLES = ['user', 'super-user', 'admin'];
 
-    return ['user', 'super-user', 'admin'];
+    console.log('GET /roles', ROLES);
+    return ROLES;
   },
 };
 
