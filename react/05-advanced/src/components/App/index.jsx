@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import SideBar from '../SideBar';
 import TodoList from '../../pages/TodoList';
@@ -13,6 +13,8 @@ function App() {
 
       <main>
         <Switch>
+          <Redirect exact from="/" to="/todo-list" />
+
           <Route path="/todo-list">
             <TodoList />
           </Route>

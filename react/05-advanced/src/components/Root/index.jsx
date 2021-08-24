@@ -9,7 +9,9 @@ function Root({ children }) {
     <StrictMode>
       <ErrorBoundary>
         <AdminProvider>
-          <Router>{children}</Router>
+          <Router basename="/globallogic-js-basecamp-2021/react/05-advanced/build">
+            {children}
+          </Router>
         </AdminProvider>
       </ErrorBoundary>
     </StrictMode>
