@@ -1,0 +1,35 @@
+.TodoList {
+  input {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  margin: 30px auto;
+  width: 300px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
+
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      padding: 10px 5px;
+      display: flex;
+      justify-content: space-between;
+      user-select: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #e0f2f1;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}
