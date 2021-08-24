@@ -1,0 +1,22 @@
+.Box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background: #f7567c;
+  color: white;
+  cursor: cell;
+  display: flex;
+
+  .xy {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+
+  .title {
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}

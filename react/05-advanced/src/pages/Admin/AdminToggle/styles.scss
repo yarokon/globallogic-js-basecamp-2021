@@ -1,0 +1,15 @@
+.AdminToggle {
+  display: flex;
+  position: fixed;
+  width: 120px;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+  background: #cddc39;
+  user-select: none;
+
+  label {
+    display: flex;
+    margin: auto;
+  }
+}
