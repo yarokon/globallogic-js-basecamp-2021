@@ -1,0 +1,29 @@
+.SideBar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #424242;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  li {
+    padding: 5px 0;
+  }
+
+  li,
+  a {
+    color: white;
+    text-decoration: none;
+
+    &.bold {
+      font-weight: bold;
+    }
+  }
+}
+
+main {
+  margin-left: 160px;
+}
