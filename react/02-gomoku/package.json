@@ -1,0 +1,40 @@
+{
+  "name": "02-gomoku",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://yarokon.github.io/globallogic-js-basecamp-2021/react/02-gomoku/build",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "sass": "^1.38.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "prettier": "prettier --write ./src",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

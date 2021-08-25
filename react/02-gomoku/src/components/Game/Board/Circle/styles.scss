@@ -1,0 +1,31 @@
+.Circle {
+  padding: 3px;
+
+  .circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+    &.r {
+      background: #f44336;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+      &.winner {
+        background: #b71c1c;
+      }
+    }
+
+    &.g {
+      background: #4caf50;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+      &.winner {
+        background: #1b5e20;
+      }
+    }
+  }
+}
